@@ -1,0 +1,18 @@
+section{
+    border: 2px solid whitesmoke;
+}
+section h1{
+    border-left: 5px solid #00C1FE;
+}
+@media screen and (min-width:992px) {
+    body{
+        background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        border: none;
+        margin-left:20%;
+    }
+}
