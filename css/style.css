@@ -1,18 +1,40 @@
-section{
-    border: 2px solid whitesmoke;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-size: 32px;
+}
+.title_sign_in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_sign_in legend{
+    font-size: 22px;
+    margin-left: 70%;
+}
+.title_sign_in p{
+    font-size: 14px;
 }
 section h1{
     border-left: 5px solid #00C1FE;
 }
-@media screen and (min-width:992px) {
-    body{
-        background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    section{
-        border: none;
-        margin-left:20%;
-    }
+.sign_in{
+    border-radius: 20px;
+    width: 475px;
+
+}
+::placeholder{
+    color: #cdcdcd;
 }
