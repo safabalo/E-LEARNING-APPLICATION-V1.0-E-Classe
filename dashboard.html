@@ -6,48 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashoard-style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <i></i>
-        <i></i>
-        <input type="search">
-        <nav class="navbar">
-            <div>
-                <h1 class="border-start border-info border-5 px-2">E-classe</h1>
+    <header class="d-flex flex-row-reverse">
+        <section class="navbar">
+            <div class="navbar-nav">
+                <a href="">
+                    <i class="fal fa-play-circle"></i>
+                </a>
+                <input type="search">
+                <a href="">
+                    <i class="fal fa-bell"></i>
+                </a>  
             </div>
-            <div>
-    
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href=""><i class="fal fa-bookmark"></i>Course</a></li>
-                    <li><a href=""><i class="fal fa-graduation-cap">Students</i></a></li>
-                    <li><a href=""><i class="far fa-usd-square">Payment</i></a></li>
-                    <li><a href=""><i class="fal fa-file-chart-line">Report</i></a></li>
-                    <li><a href=""><i class="fal fa-sliders-v-square">Settings</i></a></li>
-                </ul>
-                <a href="">Logout <i class="fal fa-sign-out-alt"></i></a>
-            </div>
+            
+        </section>
+        <nav class="container-fluid navbar">
+            <section class="navbar-nav">
+                <div>
+                    <h1 class="border-start border-info border-5 px-2">E-classe</h1>
+                </div>
+                <div>
+                    <img src="/img/youcode.png" alt="youcode_user" class="rounded">
+                    <h2>Admin name</h2>
+                    <h4 class="text-info">Admin</h4>
+                </div>
+                <div >
+                    <ul>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span> 
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="fal fa-bookmark"></i>
+                                <span>Course</span>
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="fal fa-graduation-cap"></i>
+                                <span>Students</span>
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="far fa-usd-square"></i>
+                                <span>Payment</span>
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="fal fa-file-chart-line"></i>
+                                <span>Report</span>
+                            </a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="">
+                                <i class="fal fa-sliders-v-square"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav-link" href="">
+                        <i class="fal fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </section>
+            
         </nav>
     </header>
     
     <main>
         <section>
-            <article>
-
+            <article class="card bg-info">
+                <i></i>
+                <p>Student</p>
+                <p>243</p>
             </article>
-            <article>
-
+            <article class="card ">
+                <i></i>
+                <p>Course</p>
+                <p>13</p>
             </article>
-            <article>
-
+            <article class="card bg-warning">
+                <i></i>
+                <p>Payements</p>
+                <p>DHS 556,000</p>
             </article>
-            <article>
-
+            <article class="card">
+                <i></i>
+                <p>Users</p>
+                <p>3</p>
             </article>
         </section>
     </main>
