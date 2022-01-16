@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --side-width:250px;
+    --bg-color:#FAFFC1;
+    --topnav:56px;
+}
+@media screen and (min-width:992px) {
+    .sidebar{
+        transform: none;
+        visibility: visible !important;
+        /*top:var(--topnav);*/
+    }
+    main{
+        margin-left: var(--side-width);
+    }
+    
+}
