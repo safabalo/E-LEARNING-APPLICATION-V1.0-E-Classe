@@ -4,108 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashoard-style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/dashoard-style.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/1fbc6be22b.js" crossorigin="anonymous" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="d-flex flex-row-reverse">
-        <section class="navbar">
-            <div class="navbar-nav">
+    <!---navbar---->
+    <nav class="navbar navbar-expand navbar-light bg-white fixed-top d-flex flex-row align-items-lg-start">
+        <div class="container-fluid">
+            <i class="far fa-play-circle fs-4 ms-4 text-muted" data-bs-target="#navbar"></i>
+        </div>
+          <div>
+            <form class="d-flex align-self-end">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <a href="">
-                    <i class="fal fa-play-circle"></i>
+                    <i class="far fa-bell fs-2 text-muted"></i>
                 </a>
-                <input type="search">
-                <a href="">
-                    <i class="fal fa-bell"></i>
-                </a>  
+            </form>
+          </div>
+    </nav>
+    <!---navbar---->
+    <!--sidebar-->
+      <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="navbar">
+        <div class="offcanvas-body">
+          <div>
+            <nav class="container-fluid navbar ">
+                <section class="navbar-nav row no-wrap">
+                    <div>
+                        <h1 class="border-start border-5 border-info ps-2 h2" id="E-class">E-classe</h1>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="/img/youcode.png" alt="youcode_user" class="youcode_user">
+                        <h2 class="h4 ">Admin name</h2>
+                        <h4 class="text-info">Admin</h4>
+                    </div>
+                    <div class="sidebar_items">
+                        <ul class="nav nav-pilss flex-column align-items-start">
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="fas fa-home text-dark me-1"></i>
+                                    <span class="text-dark">Home</span> 
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="far fa-bookmark text-dark me-2"></i>
+                                    <span class="text-dark">Course</span>
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="fas fa-graduation-cap text-dark  me-1"></i>
+                                    <span class="text-dark">Students</span>
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="fas fa-dollar-sign text-dark me-2 fs-4"></i>
+                                    <span class="text-dark">Payment</span>
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="fas fa-file-word text-dark  me-2"></i>
+                                    <span class="text-dark">Report</span>
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="">
+                                    <i class="fas fa-sliders-h text-dark  me-2"></i>
+                                    <span class="text-dark">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="nav-item nav-link ms-3 mt-4" href="">
+                            <span class="text-dark">Logout</span>
+                            <i class="fas fa-sign-out-alt text-dark"></i>
+                        </a>
+               </div>
+          </div>
+        </div>
+      </div>
+    <!--sidebar-->
+    <!--main-->
+    <main class="mt-5 pt-3">
+        <section class="container-fluid gx-5">
+            <div class="row ">
+                <article class="col-lg-3 col-md-5 g-md-3 col-sm-10 card student d-flex flex-column align-items-start mb-3 mb-md-2">
+                    <i class="fas fa-graduation-cap card_icon"></i>
+                    <p class="heading text-muted">Student</p>
+                    <p class="fs-3 fw-bolder align-self-end">243</p>
+                </article>
+                <article class="card col-lg-3 col-md-5 g-md-3 col-sm-10 course d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-3 mb-md-2">
+                    <i class="far fa-bookmark card_icon"></i>
+                    <p class="heading text-muted">Course</p>
+                    <p class="fs-3 fw-bolder align-self-end">13</p>
+                </article>
+                <article class="card col-lg-3 col-md-5 g-md-3 col-sm-10 payments d-flex flex-column align-items-start ms-lg-0 mb-3 mb-md-2">
+                    <i class="fas fa-dollar-sign card_icon"></i>
+                    <p class="heading text-muted">Payments</p>
+                    <p class="fs-3 fw-bolder align-self-end">DHS 556,000</p>
+                </article>
+                <article class="card col-lg-3 col-md-5 g-md-3 col-sm-10 users d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-md-2">
+                    <i class="far fa-user card_icon"></i>
+                    <p class="para heading">Users</p>
+                    <p class="fs-3 fw-bolder align-self-end">3</p>
+                </article>
             </div>
             
         </section>
-        <nav class="container-fluid navbar">
-            <section class="navbar-nav">
-                <div>
-                    <h1 class="border-start border-info border-5 px-2">E-classe</h1>
-                </div>
-                <div>
-                    <img src="/img/youcode.png" alt="youcode_user" class="rounded">
-                    <h2>Admin name</h2>
-                    <h4 class="text-info">Admin</h4>
-                </div>
-                <div >
-                    <ul>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="fas fa-home"></i>
-                                <span>Home</span> 
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="fal fa-bookmark"></i>
-                                <span>Course</span>
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="fal fa-graduation-cap"></i>
-                                <span>Students</span>
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="far fa-usd-square"></i>
-                                <span>Payment</span>
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="fal fa-file-chart-line"></i>
-                                <span>Report</span>
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="">
-                                <i class="fal fa-sliders-v-square"></i>
-                                <span>Settings</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <a class="nav-item nav-link" href="">
-                        <i class="fal fa-sign-out-alt"></i>
-                        <span>Logout</span>
-                    </a>
-                </div>
-            </section>
-            
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <article class="card bg-info">
-                <i></i>
-                <p>Student</p>
-                <p>243</p>
-            </article>
-            <article class="card ">
-                <i></i>
-                <p>Course</p>
-                <p>13</p>
-            </article>
-            <article class="card bg-warning">
-                <i></i>
-                <p>Payements</p>
-                <p>DHS 556,000</p>
-            </article>
-            <article class="card">
-                <i></i>
-                <p>Users</p>
-                <p>3</p>
-            </article>
-        </section>
     </main>
+    <!--main-->
 </body>
 </html>
