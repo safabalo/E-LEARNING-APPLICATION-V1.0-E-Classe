@@ -37,6 +37,7 @@ body{
     width: var(--side-width)!important;
     background-color: var(--bg-color);
     border-color: var(--bg-color);
+    z-index: 200;
 
 }
 .youcode_user{
@@ -48,13 +49,7 @@ body{
     margin-left: 30px;
     box-sizing: border-box;
 }
-main{
-    position: absolute;
-    width: calc(100%-270px);
-    background: rgb(250, 250, 250);
-    top: 0;
-    margin-left: 270px;
-}
+
 .main .nav{
     position: fixed;
     width: 100%;
@@ -135,11 +130,18 @@ span{
     font-size: 14px;
     
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:993px) {
     .body{
         font-family:'Montserrat', sans-serif;
         background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
         min-height: 100vh;
+    }
+    main{
+        position: absolute;
+        width: calc(100%-270px);
+        background: rgb(250, 250, 250);
+        top: 0;
+        margin-left: 270px;
     }
     .sign_in{
         display: block;
@@ -180,4 +182,12 @@ span{
     }
       
 }
-
+@media screen and (max-width:992px) {
+    main{
+        position: absolute;
+        width: calc(100%+270px);
+        background: rgb(250, 250, 250);
+        top: 0;
+        z-index: 100;
+    }
+}

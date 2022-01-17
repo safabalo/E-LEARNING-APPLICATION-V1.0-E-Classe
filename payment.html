@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body class=" bg-light">
-    <nav class="sidebar navbar vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed">
+    <nav class="sidebar navbar collapse navbar-collapse vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed " id="navbar-content">
         <ul class="navbar-nav mt-0">
             <li class="list-none">
                 <h1 class="border-start border-3 border-info">E-classe</h1>
@@ -67,6 +67,11 @@
     </nav>
     <main class="main">
         <section class="nav bg-white">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon w-100">
+                    <i class="fas fa-caret-square-left w-100"></i>
+                </span>
+            </button>
             <i class="far fa-play-circle fs-4 ms-4 mt-3 text-muted"></i>
             <form action="" class="forum mt-2">
                 <input type="search">
