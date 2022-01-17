@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Montserra' sans-serif;
 }
 :root {
     --side-width:270px;
@@ -24,6 +28,10 @@
 }
 main{
     margin-left: 50px;
+}
+.table-head {
+    border-top: 1px;
+    border-color: #ACACAC;
 }
 
 @media screen and (min-width:992px) {
