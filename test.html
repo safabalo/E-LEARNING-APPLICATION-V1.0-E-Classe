@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <script src="https://kit.fontawesome.com/1fbc6be22b.js" crossorigin="anonymous" defer></script>
-    <title>Document</title>
+    <title>Payment</title>
 </head>
 <body class=" bg-light">
     <nav class="sidebar navbar vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed">
@@ -22,7 +22,7 @@
                 <p>Admin</p>
             </li>
             <li class="list-none">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link" href="#">
                     <i class="fas fa-home text-dark me-1"></i>
                     <span class="text-dark">Home</span> 
                 </a>
@@ -75,64 +75,34 @@
                 </a>
             </form>
         </section>
-        <section class="main__content ms-3">
-            <article class="article_table">
-                <div class=" mb-3 mt-5 d-flex justify-content-between">
-                    <h2 class="h1">Payment details</h2>
-                    <i class="fas fa-arrows-alt-v text-info fs-3 pe-4 pt-2"></i>
+        <section class="main_dashbord_content ">
+            <div class="row d-flex">
+                <div class="col-5 row w-100">
+                    <article class="col-lg-5 col-md-5 col-sm-10 card student d-flex flex-column align-items-start mb-3 mb-md-2">
+                        <i class="fas fa-graduation-cap card_icon"></i>
+                        <p class="heading text-muted">Student</p>
+                        <p class="fs-3 fw-bolder align-self-end">243</p>
+                    </article>
+                    <article class="card col-lg-5 col-md-5 col-sm-10 course d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-3 mb-md-2">
+                        <i class="far fa-bookmark card_icon"></i>
+                        <p class="heading text-muted">Course</p>
+                        <p class="fs-3 fw-bolder align-self-end">13</p>
+                    </article>
                 </div>
-                <table class="table table-striped w-100">
-                    <thead>
-                        <tr class="table-head">
-                            <th scope="col">Name</th>
-                            <th scope="col">Payment scheduel</th>
-                            <th scope="col">Bill number</th>
-                            <th scope="col">Amount Paid</th>
-                            <th scope="col">Balance amount</th>
-                            <th scope="col">Date</th>
-                            <th scope="col"></th>
-                          </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Karthi</th>
-                        <td>First</td>
-                        <td>00012223</td>
-                        <td>DHS 100,000</td>
-                        <td>DHS 500,000</td>
-                        <td>05-Jan, 2022</td>
-                        <td class="text-info"><i class="far fa-eye"></i></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Karthi</th>
-                        <td>First</td>
-                        <td>00012223</td>
-                        <td>DHS 100,000</td>
-                        <td>DHS 500,000</td>
-                        <td>05-Jan, 2022</td>
-                        <td class="text-info"><i class="far fa-eye"></i></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Karthi</th>
-                        <td>First</td>
-                        <td>00012223</td>
-                        <td>DHS 100,000</td>
-                        <td>DHS 500,000</td>
-                        <td>05-Jan, 2022</td>
-                        <td class="text-info"><i class="far fa-eye"></i></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Karthi</th>
-                        <td>First</td>
-                        <td>00012223</td>
-                        <td>DHS 100,000</td>
-                        <td>DHS 500,000</td>
-                        <td>05-Jan, 2022</td>
-                        <td class="text-info"><i class="far fa-eye"></i></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </article>
+                <div class="col-5 row w-100">
+                    <article class="card col-lg-5 col-md-5 col-sm-10 payments d-flex flex-column align-items-start ms-lg-0 mb-3 mb-md-2">
+                        <i class="fas fa-dollar-sign card_icon"></i>
+                        <p class="heading text-muted">Payments</p>
+                        <p class="fs-3 fw-bolder align-self-end">DHS 556,000</p>
+                    </article>
+                    <article class="card col-lg-5 col-md-5  col-sm-10 users d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-md-2">
+                        <i class="far fa-user card_icon"></i>
+                        <p class="para heading">Users</p>
+                        <p class="fs-3 fw-bolder align-self-end">3</p>
+                    </article>
+                </div>
+                
+            </div>    
         </section>
     </main>
     

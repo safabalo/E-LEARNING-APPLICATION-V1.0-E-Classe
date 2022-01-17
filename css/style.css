@@ -2,6 +2,22 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserra' sans-serif;
+}
+:root {
+    --side-width:270px;
+    --bg-color:#FAFFC1;
+    --bg-student:#F0F9FF;
+    --bg-course:#FEF6FB;
+    --bg-payments:#FEFBEC;
+    --bg-user:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
 }
 .sign_in{
     margin-right: 5%;
@@ -16,8 +32,111 @@
 .title_sign_in legend{
     padding-left: 35%;
 }
+
+.sidebar{
+    width: var(--side-width)!important;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+
+}
+.youcode_user{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.sidebar_items li{
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+main{
+    position: absolute;
+    width: calc(100%-270px);
+    background: rgb(250, 250, 250);
+    top: 0;
+    margin-left: 270px;
+}
+.main .nav{
+    position: fixed;
+    width: 100%;
+    height: 62px;
+    z-index: 100;
+}
+.main table{
+    width: 100%;
+    margin-right:220px;
+}
+.article_table{
+    margin-top:62px;
+}
+.forum{
+    margin-left: 55%;
+}
+.table-head {
+    border-top: 1px;
+    border-color: #ACACAC;
+}
+.main_student_content{
+    margin-top: 62px;
+    width:94.5%;
+    margin-right: -50px;
+    margin-left: 10px;
+
+}
+.main_dashbord_content {
+    margin-top: 62px;
+    width:100%;
+    margin-right: -50px;
+    margin-left: 10px;
+}
+.student{
+    background-color: var(--bg-student);
+    border-color: var(--bg-student);
+    border-radius:8px;
+}
+.student i{
+    color: #74C1ED;
+}
+.course{
+    background-color: var(--bg-course);
+    border-color:var(--bg-course);
+    border-radius:8px;
+}
+.course i{
+    color:#EE95C5;
+}
+.payments{
+    background-color:var(--bg-payments);
+    border-color:var(--bg-payments);
+    border-radius:8px;
+}
+
+.payments i{
+    color:#00C1FE;
+}
+.users{
+    background:var(--bg-user);
+    border-color:none;
+    border-radius:8px;
+}
+
+.users i {
+    color: white;
+}
+.para{
+    color: white;
+}
+.heading{
+    font-size: 14px;
+}
+.card_icon{
+    font-size: 34px;
+}
+span{
+    font-size: 14px;
+    
+}
 @media screen and (min-width:768px) {
-    body{
+    .body{
         font-family:'Montserrat', sans-serif;
         background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
         min-height: 100vh;
@@ -55,7 +174,7 @@
         align-items: center;
         font-size: 14px;
     }
-    .user{
+    .user_sing{
         width:90%;
         box-shadow:0;
     }
