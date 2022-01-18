@@ -12,8 +12,13 @@
 </head>
 <body>
     <body class=" bg-light">
-        <nav class="sidebar navbar vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed">
-            <ul class="navbar-nav mt-0">
+        <nav class="sidebar navbar collapse navbar-collapse vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed" id="navbar-content">
+            <ul class="navbar-nav mt-0 d-flex flex-column">
+                <button type="button" class="navbar-toggler d-lg-none align-self-end" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                    <span class="navbar-toggler-icon w-100">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
                 <li class="list-none">
                     <h1 class="border-start border-3 border-info">E-classe</h1>
                 </li>
@@ -68,31 +73,42 @@
         </nav>
     <!--sidebar-->
     <!--main-->
-    <main class="mt-5 pt-3">
-        <section class="container-fluid gx-5">
-            <div class="row ">
-                <article class="col-lg-5 col-md-5 g-md-3 col-sm-10 card student d-flex flex-column align-items-start mb-3 mb-md-2">
+    <main class="main">
+        <section class="nav bg-white">
+            <button type="button" class="navbar-toggler d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon w-100">
+                    <i class="fas fa-caret-square-left w-100"></i>
+                </span>
+            </button>
+            <i class="far fa-play-circle fs-4 ms-4 mt-3 text-muted"></i>
+            <form action="" class="forum mt-2">
+                <input type="search">
+                <a href="#">
+                    <i class="far fa-bell fs-2 text-muted ms-2"></i>
+                </a>
+            </form>
+        </section>
+        <section class="cards_collection d-flex justify-content-around">
+                <article class="card  student d-flex flex-column align-items-start mb-3 mb-md-2">
                     <i class="fas fa-graduation-cap card_icon"></i>
                     <p class="heading text-muted">Student</p>
                     <p class="fs-3 fw-bolder align-self-end">243</p>
                 </article>
-                <article class="card col-lg-5 col-md-5 g-md-3 col-sm-10 course d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-3 mb-md-2">
+                <article class="card  course d-flex flex-column align-items-start ms-md-2 ms-2 mb-3 mb-md-2">
                     <i class="far fa-bookmark card_icon"></i>
                     <p class="heading text-muted">Course</p>
                     <p class="fs-3 fw-bolder align-self-end">13</p>
                 </article>
-                <article class="card col-lg-3 col-md-5 g-md-3 col-sm-10 payments d-flex flex-column align-items-start ms-lg-0 mb-3 mb-md-2">
+                <article class="card  payments d-flex flex-column align-items-start ms-2 mb-3 mb-md-2">
                     <i class="fas fa-dollar-sign card_icon"></i>
                     <p class="heading text-muted">Payments</p>
                     <p class="fs-3 fw-bolder align-self-end">DHS 556,000</p>
                 </article>
-                <article class="card col-lg-3 col-md-5 g-md-3 col-sm-10 users d-flex flex-column align-items-start ms-md-2 ms-lg-0 mb-md-2">
+                <article class="card  users d-flex flex-column align-items-start ms-md-2 ms-2 mb-md-2">
                     <i class="far fa-user card_icon"></i>
                     <p class="para heading">Users</p>
                     <p class="fs-3 fw-bolder align-self-end">3</p>
                 </article>
-            </div>
-            
         </section>
     </main>
     <!--main-->
