@@ -6,91 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="bootstrap.bundle.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/1fbc6be22b.js" crossorigin="anonymous" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
     <title>Student</title>
 </head>
-<body class=" bg-light">
-    <nav class="sidebar navbar collapse navbar-collapse vh-100 overflow-auto d-lg-flex justify-content-center align-items-center position-fixed" id="navbar-content">
-        <ul class="navbar-nav mt-0 d-flex flex-column">
-            <button type="button" class="navbar-toggler d-lg-none align-self-end" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                <span class="navbar-toggler-icon w-100">
-                    <i class="fas fa-times"></i>
-                </span>
-            </button>
-            <li class="list-none">
-                <h1 class="border-start border-3 border-info">E-classe</h1>
+<body>
+    <header class="first__nav 100vh bg-danger float-end d-flex justify-content-between py-2">
+        <img src="Play.svg" alt="" class="ps-2">
+        <form action="" class="notification">
+            <div class="search-wrapper">
+                <input type="search" name="" id="" placeholder="search">
+                <img src="Search.svg" alt="">
+            </div>
+            <img src="Notification.svg" alt="" id="notification_bell">
+        </form>
+        </img>
+    </header>
+    <nav class="sidebar navbar float-start vh-100 position-fixed">
+        <ul class="navbar-nav d-md-flex justify-content-md-center ms-md-3">
+            <li class=" d-sm-none d-lg-block">
+                <h1 class="border-start border-5 border-info h2 ms-2">E-classe</h1>
             </li>
             <li>
-                <img src="youcode.png" alt="youcode_user" class="youcode_user">
-                <h2>Admin</h2>
-                <p class="text-info fs-4 ps-3 fw-3">Admin</p>
+                <img src="Admin-photo.png" alt="" id="admin" height="100px" width="100px" class="ms-5 d-sm-none d-lg-block">
             </li>
-            <li class="list-none">
-                <a class="nav-link" href="dashboard.html">
-                    <i class="fas fa-home text-dark me-1"></i>
-                    <span class="text-dark">Home</span> 
+            <li>
+                <h3 class="ms-3 d-sm-none d-lg-block admin">Admin name</h3>
+            </li>
+            <li class="text-info h5 ms-5 d-sm-none d-lg-block admin">Admin</li>
+            <li class="list_elements ms-lg-5 mb-md-3">
+                <a href="dashboard.html" class="d-flex nav-link text-black">
+                    <img src="Home.svg" alt="">
+                    <p class="pt-lg-3 ps-2 d-sm-none d-lg-block paragraph">Home</p>
                 </a>
             </li>
-            <li class="list-none ">
-                <a class="nav-link" href="#">
-                    <i class="far fa-bookmark text-dark me-2"></i>
-                    <span class="text-dark">Course</span>
+            <li class="list_elements ms-lg-5 mb-md-3">
+                <a href="#" class="d-flex nav-link text-black">
+                    <img src="Course.svg" alt="">
+                    <p class="pt-lg-3 ps-2 d-sm-none d-lg-block paragraph">Course</p>
                 </a>
             </li>
-            <li class="list-none border-1 border-info bg-info">
-                <a class="nav-link" href="student.html">
-                    <i class="fas fa-graduation-cap text-dark  me-1"></i>
-                    <span class="text-dark">Students</span>
+            <li class="list_elements ms-lg-5 mb-md-3 student">
+                <a href="student.html" class="d-flex nav-link text-black">
+                    <img src="Student.svg" alt="">
+                    <p class="pt-lg-3 ps-2 d-sm-none d-lg-block paragraph"  id="student">Student</p>
                 </a>
             </li>
-            <li class="list-none">
-                <a class="nav-link" href="payment.html">
-                    <i class="fas fa-dollar-sign text-dark me-2 fs-4"></i>
-                    <span class="text-dark">Payment</span>
+            <li class="list_elements ms-lg-5 mb-md-3">
+                <a href="payment.html" class="d-flex nav-link text-black">
+                    <img src="Payment.svg" alt="">
+                    <p class="pt-3 ps-2 d-sm-none d-lg-block paragraph">Payment</p>
                 </a>
             </li>
-            <li class="list-none">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-file-word text-dark me-2"></i>
-                    <span class="text-dark">Report</span>
+            <li class="list_elements ms-lg-5 mb-md-3">
+                <a href="#" class="d-flex nav-link text-black">
+                    <img src="Report.svg" alt="">
+                    <p class="pt-lg-3 ps-2 d-sm-none d-lg-block paragraph">Report</p>
                 </a>
             </li>
-            <li class="list-none">
-                <a class="nav-link" href="">
-                    <i class="fas fa-sliders-h text-dark  me-2"></i>
-                    <span class="text-dark">Settings</span>
+            <li class="list_elements ms-lg-5 mb-md-3">
+                <a href="#" class="d-flex nav-link text-black">
+                    <img src="Setting.svg" alt="">
+                    <p class="pt-lg-3 ps-lg-2 d-sm-none d-lg-block paragraph">Setting</p>
                 </a>
             </li>
-            <li class="list-none">
-                <a class="nav-item nav-link ms-3 mt-4" href="index.html">
-                    <span class="text-dark">Logout</span>
-                    <i class="fas fa-sign-out-alt text-dark"></i>
+            <li class="list_elements ms-lg-5 mt-lg-1 mb-md-3">
+                <a href="" class="d-flex nav-link text-black">
+                    <p class="pt-lg-3 pe-lg-2 d-sm-none d-lg-block paragraph">Logout</p>
+                    <img src="Logout.svg" alt="">
                 </a>
             </li>
         </ul>
     </nav>
-    <main class="main">
-        <section class="nav bg-white">
-            <button type="button" class="navbar-toggler d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                <span class="navbar-toggler-icon w-100">
-                    <i class="fas fa-caret-square-left w-100"></i>
-                </span>
-            </button>
-            <i class="far fa-play-circle fs-4 ms-4 mt-3 text-muted"></i>
-            <form action="" class="forum mt-2">
-                <input type="search">
-                <a href="#">
-                    <i class="far fa-bell fs-2 text-muted ms-2"></i>
-                </a>
-            </form>
-        </section>
-        <section class="main_student_content ">
-            <article class="" >
-            <div class="d-flex justify-content-between w-100">
+    <main class="main float-end mt-4">
+        <article class="" >
+            <div class="d-flex justify-content-between student__list ms-2">
                 <h2 class="h1">Student list</h2>
                 <div>
-                    <i class="fas fa-arrows-alt-v text-info fs-3"></i>
+                    <img src="Up-Down.svg" alt="" class="me-2">
                     <button type="button" class="btn btn-info text-white">ADD NEW STUDENT</button>
                 </div>
                 
@@ -100,117 +92,115 @@
                 <thead class="table-head">
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Enroll Number</th>
-                        <th scope="col">Date of admission</th>
+                        <th scope="col" class="thead__elements">Name</th>
+                        <th scope="col" class="thead__elements">Email</th>
+                        <th scope="col" class="thead__elements">Phone</th>
+                        <th scope="col" class="thead__elements">Enroll Number</th>
+                        <th scope="col" class="thead__elements">Date of admission</th>
                     </tr>
                 </thead>
                   <tbody>
-                      <tr>
-                          <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                          <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                           <td>username</td>
                           <td>user@email.com</td>
                           <td>7305477760</td>
                           <td>1234567305477760</td>
                           <td>08-Dec, 2021</td>
                           <td>
-                             <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                           </td>
                           <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
                           </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                         <td>username</td>
                         <td>karthi@gmmail.com</td>
                         <td>7305477760</td>
                         <td>1234567305477760</td>
                         <td>08-Dec, 2021</td>
                         <td>
-                            <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                         </td>
                         <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
+                         </td>
+                      </tr>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
+                        <td>username</td>
+                        <td>karthi@gmmail.com</td>
+                        <td>7305477760</td>
+                        <td>1234567305477760</td>
+                        <td>08-Dec, 2021</td>
+                        <td>
+                            <img src="Pen.svg" alt="">
+                        </td>
+                        <td>
+                            <img src="Garbage.svg" alt="">
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                         <td>username</td>
                         <td>karthi@gmmail.com</td>
                         <td>7305477760</td>
                         <td>1234567305477760</td>
                         <td>08-Dec, 2021</td>
                         <td>
-                            <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                         </td>
                         <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                         <td>username</td>
                         <td>karthi@gmmail.com</td>
                         <td>7305477760</td>
                         <td>1234567305477760</td>
                         <td>08-Dec, 2021</td>
                         <td>
-                            <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                         </td>
                         <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                         <td>username</td>
                         <td>karthi@gmmail.com</td>
                         <td>7305477760</td>
                         <td>1234567305477760</td>
                         <td>08-Dec, 2021</td>
                         <td>
-                            <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                         </td>
                         <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
+                      <tr class="table__elements">
+                        <th scope="row"><img src="user-profile.png" alt="user_svg"></th>
                         <td>username</td>
                         <td>karthi@gmmail.com</td>
                         <td>7305477760</td>
                         <td>1234567305477760</td>
                         <td>08-Dec, 2021</td>
                         <td>
-                            <i class="fas fa-pen text-info"></i>
+                            <img src="Pen.svg" alt="">
                         </td>
                         <td>
-                            <i class="fas fa-trash text-info"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><img src="pexels-photo-2379004 1.svg" alt="user_svg"></th>
-                        <td>username</td>
-                        <td>karthi@gmmail.com</td>
-                        <td>7305477760</td>
-                        <td>1234567305477760</td>
-                        <td>08-Dec, 2021</td>
-                        <td>
-                            <i class="fas fa-pen text-info"></i>
-                        </td>
-                        <td>
-                            <i class="fas fa-trash text-info"></i>
+                            <img src="Garbage.svg" alt="">
                         </td>
                       </tr>
                   </tbody>
                 </table>
             </article>    
-        </section>
     </main>
-    
 </body>
 </html>
