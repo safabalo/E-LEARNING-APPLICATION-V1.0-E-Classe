@@ -145,7 +145,7 @@ span{
     border-spacing: 0 10px;
 }
 @media screen and (min-width:992px) {
-    .body{
+    .page{
         font-family:'Montserrat', sans-serif;
         background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
         min-height: 100vh;
