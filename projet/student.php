@@ -1,12 +1,18 @@
+<?php
+session_start();
+if(empty($_SESSION["active"])){
+    header('location:index.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <script src="../js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
     <title>Student</title>
 </head>
 <body class="body">
@@ -43,7 +49,8 @@
                         
                               
                                 <?php 
-                                $users=json_decode(file_get_contents('data.json'),true);
+                                $mysqli = new mysqli('localhost', 'root', '', 'studentdb') or die (mysqli_error($mysqli));
+                                $users= $mysqli->query ("SELECT * FROM  mystudents") or die($mysqli->error);
                                 foreach($users as $user) : 
                                    ?>
                                     <tr class="table__elements">
@@ -51,13 +58,19 @@
                                     <td><?php echo $user['name'];?></td>
                                     <td><?php echo $user['email'];?></td>
                                     <td><?php echo $user['phone'];?></td>
-                                    <td><?php echo $user['enroll number'];?></td>
-                                    <td><?php echo $user['date of admission'];?></td>
+                                    <td><?php echo $user['enroll_number'];?></td>
+                                    <td><?php echo $user['date_of_admission'];?></td>
                                     <td>
-                                        <img src="img/Pen.svg" alt="">
+                                        <a href="addstudent.php?edit=<?php echo $user['id']; ?>">
+                                        <img src="img/Pen.svg" alt="edit">
+                                        </a>
+                                        
                                     </td>
                                     <td>
-                                        <img src="img/Garbage.svg" alt="garbage">
+                                        <a href="crudstudent.php?delete=<?php echo $user['id']; ?>">
+                                        <img src="img/Garbage.svg" alt="delete">
+                                        </a>
+                                        
                                     </td>
                                     </tr>
                                 <?php endforeach ?>

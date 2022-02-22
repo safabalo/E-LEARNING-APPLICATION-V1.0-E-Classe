@@ -30,7 +30,6 @@ if (isset($_GET['edit'])){
         $courses= $mysqli->query("SELECT * FROM mycourses WHERE id= $id") or die($mysqli->error);
        if($courses -> num_rows >0){
                $course = $courses->fetch_array() ;
-        //        $user = $users->fetch_all(PDO::FETCH_OBJ);
                 $name = $course['name'];
                 $email = $course['email'];
                 $course_name = $course['course'];

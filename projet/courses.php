@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(empty($_SESSION["active"])){
+    header('location: index.php');
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,11 +46,9 @@
                         <th scope="col" class="thead__elements">Date</th>
                     </tr>
                 </thead>
-                  <tbody>
-                        
-                              
-                                <?php 
-                               $mysqli = new mysqli('localhost', 'root', '', 'studentdb') or die (mysqli_error($mysqli));
+                    <tbody> 
+                            <?php 
+                              $mysqli = new mysqli('localhost', 'root', '', 'studentdb') or die (mysqli_error($mysqli));
                                 $courses= $mysqli->query ("SELECT * FROM  mycourses") or die($mysqli->error);
                                 foreach($courses as $course) : 
                                    ?>
@@ -67,8 +72,8 @@
                                         
                                     </td>
                                     </tr>
-                                <?php endforeach ?>
-                  </tbody>
+                            <?php endforeach ?>
+                    </tbody>
                 </table>
             </article>    
 </body>
